@@ -48,7 +48,9 @@ class PHPUnitRunner implements PHPUnitRunnerContract
             $test->resetStatuses();
 
             foreach ($test->getMethodsToWatch() as $key=>$method) {
-                $process = new Process([base_path().'/vendor/bin/phpunit', '--filter', $method, $test->getFilePath()], base_path());
+                // Make a quick and dirty change that will hopefully fire codeception instead of phpunit
+                // @todo: I will try and get it done properly in the coming week or so
+                $process = new Process([base_path().'/vendor/bin/codecept', '', $method, $test->getFilePath()], base_path());
 
                 try {
                     $process->mustRun();
