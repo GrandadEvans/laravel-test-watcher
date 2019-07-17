@@ -1,11 +1,12 @@
 {
-    "name": "wackystudio/laravel-test-watcher",
-    "description": "A test file watcher for Laravel that automatically runs specific test cases based on a @watch annotation",
+    "name": "grandadevans/laravel-test-watcher",
+    "description": "A test file watcher for Laravel that automatically runs specific Codeception test cases based on a @watch annotation",
     "keywords": [
-        "wackystudio",
+        "grandadevans",
+        "codeception",
         "laravel-test-watcher"
     ],
-    "homepage": "https://github.com/wackystudio/laravel-test-watcher",
+    "homepage": "https://github.com/grandadevans/laravel-test-watcher",
     "license": "MIT",
     "type": "library",
     "authors": [
@@ -13,7 +14,11 @@
             "name": "Thomas Noergaard",
             "email": "tgn@wackystudio.com",
             "role": "Developer"
-        }
+        },
+        {
+            "name": "John Evans",
+            "email": "john@grandadevans.com",
+            "role": "Developer"
     ],
     "require": {
         "php": "^7.2",
@@ -29,21 +34,21 @@
     },
     "require-dev": {
         "orchestra/testbench": "3.8.1",
-        "phpunit/phpunit": "^7.0"
+        "codeception/c3": "^2.4",
+        "codeception/codeception": "^3.0",
     },
     "autoload": {
         "psr-4": {
-            "WackyStudio\\LaravelTestWatcher\\": "src"
+            "Grandadevans\\LaravelTestWatcher\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "WackyStudio\\LaravelTestWatcher\\Tests\\": "tests"
+            "Grandadevans\\LaravelTestWatcher\\Tests\\": "tests"
         }
     },
     "scripts": {
-        "test": "vendor/bin/phpunit",
-        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+        "test": "vendor/bin/codecept"
 
     },
     "config": {
@@ -52,10 +57,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "WackyStudio\\LaravelTestWatcher\\LaravelTestWatcherServiceProvider"
+                "Grandadevans\\LaravelTestWatcher\\LaravelTestWatcherServiceProvider"
             ],
             "aliases": {
-                "LaravelTestWatcher": "WackyStudio\\LaravelTestWatcher\\Facades\\LaravelTestWatcher"
+                "LaravelTestWatcher": "Grandadevans\\LaravelTestWatcher\\Facades\\LaravelTestWatcher"
             }
         }
     }
