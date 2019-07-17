@@ -1,14 +1,9 @@
 # NOT the PHPUnit version
 
-I have dated this folked repo so that it now uses Codeception instead of phpunit. I plan on introducing a choice into the config etc, but I don't have time at the moment.
-With that in mind I have left Grandadevans original readme below for your reference.
+I have updated this folked repo so that it now uses Codeception instead of phpunit. I plan on introducing a choice into the config etc, but I don't have time at the moment.
+With that in mind I have left an altered version of the original readme below for your reference.
 
-![Logo](logo.jpg)
-# Run specific tests methods when your test or source code changes
-
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/grandadevans/laravel-test-watcher.svg?style=flat-square)](https://packagist.org/packages/grandadevans/laravel-test-watcher)
-[![Build Status](https://travis-ci.org/Grandadevans/laravel-test-watcher.svg?branch=master&style=flat-square)](https://travis-ci.org/Grandadevans/laravel-test-watcher.svg?branch=master)
-[![Total Downloads](https://img.shields.io/packagist/dt/grandadevans/laravel-test-watcher.svg?style=flat-square)](https://packagist.org/packages/grandadevans/laravel-test-watcher)
+## Run specific tests methods when your test or source code changes
 
 When looking at our testing workflow, we realized how often we were triggering our tests, especially single test cases or groups of test cases.
 Using an IDE like PHPStorm this is done quickly with a keyboard shortcut, but in other IDEs, or editors, this is not always as easy. 
@@ -28,15 +23,27 @@ to stop watching the test case by removing the `@watch` annotation again; it is 
 No need to jump between your IDE/editor and the terminal, adding or removing `@watch` annotations in your code is enough, 
 and Laravel Test Watcher takes care of the rest.
 
-## Installation
+### Installation
 
 You can install the package via composer:
 
-```bash
-composer require grandadevans/laravel-test-watcher
+Add the following to your composer.json file
+```json
+...,
+"repositories": [
+    {
+        "type": "vcs",
+        "url": "https://github.com/GrandadEvans/laravel-test-watcher"
+    }
+],
+...
 ```
 
-## Usage
+This may be available via packagist in the future. I have to contact the original developer
+(Thomas Noergaard from WackyStudio), to see if he is interested in having the test suite
+selectable via composer call and/or config file instead of relying on PHPUnit, as I prefer Codeception.
+ 
+### Usage
 To watch a test in a test class, use the @watch annotation like this:
 ``` php
 /**
@@ -68,7 +75,7 @@ For database testing we recommend that you create a `.env.testing` environment f
 If you don't do this, Laravel Test Watcher will test against the database given in the `.env` file, which we do not recommend.
 
 ### Configuration
-By default Laravel Test Watcher watches all files in the `app` `routes` and `tests` folders, 
+By default Laravel Test Watcher watches all files in the `app`, `routes`, `tests` and `resources/views` folders, 
 meaning that any changes to a file in these directories, makes Laravel Test Watcher run all the watched test cases.
 
 If you want to configure which directories Laravel Test Watcher should watch, you can do this by publishing the configuration file
@@ -106,7 +113,7 @@ composer test
 
 Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
 
-## Contributing
+### Contributing
 
 Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
@@ -114,15 +121,15 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 If you discover any security related issues, please email tgn@grandadevans.com instead of using the issue tracker.
 
-## Credits
+### Credits
 
 - [Thomas Nørgaard](https://github.com/thomasnoergaard)
 - [All Contributors](../../contributors)
 
-## License
+### License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-## Laravel Package Boilerplate
+### Laravel Package Boilerplate
 
 This package was generated using the [Laravel Package Boilerplate](https://laravelpackageboilerplate.com).
