@@ -1,3 +1,8 @@
+# NOT the PHPUnit version
+
+I have dated this folked repo so that it now uses Codeception instead of phpunit. I plan on introducing a choice into the config etc, but I don't have time at the moment.
+With that in mind I have left WackyStudio original readme below for your reference.
+
 ![Logo](logo.jpg)
 # Run specific tests methods when your test or source code changes
 
