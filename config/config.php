@@ -18,5 +18,6 @@ return [
         'app',
         'routes',
         'tests',
+        'resources/views'
     ],
 ];
