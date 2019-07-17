@@ -19,6 +19,7 @@
             "name": "John Evans",
             "email": "john@grandadevans.com",
             "role": "Developer"
+        }
     ],
     "require": {
         "php": "^7.2",
