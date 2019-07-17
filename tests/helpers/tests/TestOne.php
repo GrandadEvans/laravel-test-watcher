@@ -1,6 +1,6 @@
 <?php
 
-namespace WackyStudio\LaravelTestWatcher\Tests\helpers\tests;
+namespace Grandadevans\LaravelTestWatcher\Tests\helpers\tests;
 
 use PHPUnit\Framework\TestCase;
 

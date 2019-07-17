@@ -1,8 +1,8 @@
 <?php
 
-namespace WackyStudio\LaravelTestWatcher\TestFiles;
+namespace Grandadevans\LaravelTestWatcher\TestFiles;
 
-use WackyStudio\LaravelTestWatcher\Contracts\TestFileContract;
+use Grandadevans\LaravelTestWatcher\Contracts\TestFileContract;
 
 class InvalidTestFile implements TestFileContract
 {

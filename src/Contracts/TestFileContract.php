@@ -1,6 +1,6 @@
 <?php
 
-namespace WackyStudio\LaravelTestWatcher\Contracts;
+namespace Grandadevans\LaravelTestWatcher\Contracts;
 
 interface TestFileContract
 {

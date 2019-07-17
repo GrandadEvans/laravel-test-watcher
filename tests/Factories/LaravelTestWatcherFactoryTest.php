@@ -1,12 +1,12 @@
 <?php
 
-namespace WackyStudio\LaravelTestWatcher\Tests\Factories;
+namespace Grandadevans\LaravelTestWatcher\Tests\Factories;
 
 use Orchestra\Testbench\TestCase;
 use Yosymfony\ResourceWatcher\ResourceWatcher;
-use WackyStudio\LaravelTestWatcher\LaravelTestWatcher;
-use WackyStudio\LaravelTestWatcher\LaravelTestWatcherServiceProvider;
-use WackyStudio\LaravelTestWatcher\Factories\LaravelTestWatcherFactory;
+use Grandadevans\LaravelTestWatcher\LaravelTestWatcher;
+use Grandadevans\LaravelTestWatcher\LaravelTestWatcherServiceProvider;
+use Grandadevans\LaravelTestWatcher\Factories\LaravelTestWatcherFactory;
 
 class LaravelTestWatcherFactoryTest extends TestCase
 {

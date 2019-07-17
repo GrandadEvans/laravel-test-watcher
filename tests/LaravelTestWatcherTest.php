@@ -1,15 +1,15 @@
 <?php
 
-namespace WackyStudio\LaravelTestWatcher\Tests;
+namespace Grandadevans\LaravelTestWatcher\Tests;
 
 use Orchestra\Testbench\TestCase;
 use Illuminate\Support\Facades\Artisan;
-use WackyStudio\LaravelTestWatcher\Contracts\PHPUnitRunnerContract;
-use WackyStudio\LaravelTestWatcher\TestFiles\FilesToTestRepository;
-use WackyStudio\LaravelTestWatcher\LaravelTestWatcherServiceProvider;
-use WackyStudio\LaravelTestWatcher\Factories\LaravelTestWatcherFactory;
-use WackyStudio\LaravelTestWatcher\Contracts\CommandLineInterfaceContract;
-use WackyStudio\LaravelTestWatcher\Facades\LaravelTestWatcher as LaravelTestWatcherFacade;
+use Grandadevans\LaravelTestWatcher\Contracts\PHPUnitRunnerContract;
+use Grandadevans\LaravelTestWatcher\TestFiles\FilesToTestRepository;
+use Grandadevans\LaravelTestWatcher\LaravelTestWatcherServiceProvider;
+use Grandadevans\LaravelTestWatcher\Factories\LaravelTestWatcherFactory;
+use Grandadevans\LaravelTestWatcher\Contracts\CommandLineInterfaceContract;
+use Grandadevans\LaravelTestWatcher\Facades\LaravelTestWatcher as LaravelTestWatcherFacade;
 
 class LaravelTestWatcherTest extends TestCase
 {

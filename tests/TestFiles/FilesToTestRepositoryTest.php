@@ -1,13 +1,13 @@
 <?php
 
-namespace WackyStudio\LaravelTestWatcher\Tests\TestFiles;
+namespace Grandadevans\LaravelTestWatcher\Tests\TestFiles;
 
 use Orchestra\Testbench\TestCase;
-use WackyStudio\LaravelTestWatcher\TestFiles\TestFile;
-use WackyStudio\LaravelTestWatcher\TestFiles\FilesToTestRepository;
-use WackyStudio\LaravelTestWatcher\LaravelTestWatcherServiceProvider;
-use WackyStudio\LaravelTestWatcher\Contracts\AnnotatedTestsFinderContract;
-use WackyStudio\LaravelTestWatcher\Facades\LaravelTestWatcher as LaravelTestWatcherFacade;
+use Grandadevans\LaravelTestWatcher\TestFiles\TestFile;
+use Grandadevans\LaravelTestWatcher\TestFiles\FilesToTestRepository;
+use Grandadevans\LaravelTestWatcher\LaravelTestWatcherServiceProvider;
+use Grandadevans\LaravelTestWatcher\Contracts\AnnotatedTestsFinderContract;
+use Grandadevans\LaravelTestWatcher\Facades\LaravelTestWatcher as LaravelTestWatcherFacade;
 
 class FilesToTestRepositoryTest extends TestCase
 {
@@ -43,12 +43,12 @@ class FilesToTestRepositoryTest extends TestCase
             __DIR__.'/../helpers/tests/TestOne.php',
             'TestOne',
             ['it_serves_as_a_fake_test_for_a_real_test'],
-            'WackyStudio\LaravelTestWatcher\Tests\helpers\tests'
+            'Grandadevans\LaravelTestWatcher\Tests\helpers\tests'
         );
         $testTwoTestFile = new TestFile(
             __DIR__.'/../helpers/tests/TestTwo.php', 'TestTwo',
             ['it_also_serves_as_a_fake_test_for_a_real_test'],
-            'WackyStudio\LaravelTestWatcher\Tests\helpers\tests'
+            'Grandadevans\LaravelTestWatcher\Tests\helpers\tests'
         );
 
         $this->assertTrue($testOneTestFile->hasAnyTests());
@@ -133,13 +133,13 @@ class FilesToTestRepositoryTest extends TestCase
         $expectedChanges = [
             'added' => [
                 [
-                    'file' => 'WackyStudio\LaravelTestWatcher\Tests\helpers\tests\TestOne',
+                    'file' => 'Grandadevans\LaravelTestWatcher\Tests\helpers\tests\TestOne',
                     'methods' => [
                         'it_serves_as_a_fake_test_for_a_real_test',
                     ],
                 ],
                 [
-                    'file' => 'WackyStudio\LaravelTestWatcher\Tests\helpers\tests\TestThree',
+                    'file' => 'Grandadevans\LaravelTestWatcher\Tests\helpers\tests\TestThree',
                     'methods' => [
                         'it_serves_as_a_fake_test_for_a_real_test',
                         'it_also_serves_as_a_fake_test',
@@ -170,7 +170,7 @@ class FilesToTestRepositoryTest extends TestCase
             'added' => [],
             'updated' => [
                 [
-                    'file' => 'WackyStudio\LaravelTestWatcher\Tests\helpers\tests\TestThree',
+                    'file' => 'Grandadevans\LaravelTestWatcher\Tests\helpers\tests\TestThree',
                     'methods' => [
                         'it_serves_as_a_fake_test_for_a_real_test',
                     ],
@@ -209,7 +209,7 @@ class FilesToTestRepositoryTest extends TestCase
             'updated' =>[],
             'removed' =>  [
                 [
-                    'file' => 'WackyStudio\LaravelTestWatcher\Tests\helpers\tests\TestThree',
+                    'file' => 'Grandadevans\LaravelTestWatcher\Tests\helpers\tests\TestThree',
                     'methods' => [
                         'it_serves_as_a_fake_test_for_a_real_test',
                         'it_also_serves_as_a_fake_test',

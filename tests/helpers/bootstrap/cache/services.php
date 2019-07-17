@@ -24,7 +24,7 @@ return [
     19 => 'Illuminate\\Translation\\TranslationServiceProvider',
     20 => 'Illuminate\\Validation\\ValidationServiceProvider',
     21 => 'Illuminate\\View\\ViewServiceProvider',
-    22 => 'WackyStudio\\LaravelTestWatcher\\LaravelTestWatcherServiceProvider',
+    22 => 'Grandadevans\\LaravelTestWatcher\\LaravelTestWatcherServiceProvider',
   ],
   'eager' => [
     0 => 'Illuminate\\Auth\\AuthServiceProvider',
@@ -37,7 +37,7 @@ return [
     7 => 'Illuminate\\Pagination\\PaginationServiceProvider',
     8 => 'Illuminate\\Session\\SessionServiceProvider',
     9 => 'Illuminate\\View\\ViewServiceProvider',
-    10 => 'WackyStudio\\LaravelTestWatcher\\LaravelTestWatcherServiceProvider',
+    10 => 'Grandadevans\\LaravelTestWatcher\\LaravelTestWatcherServiceProvider',
   ],
   'deferred' => [
     'Illuminate\\Broadcasting\\BroadcastManager' => 'Illuminate\\Broadcasting\\BroadcastServiceProvider',

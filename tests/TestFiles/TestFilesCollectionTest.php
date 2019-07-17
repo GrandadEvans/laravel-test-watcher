@@ -1,11 +1,11 @@
 <?php
 
-namespace WackyStudio\LaravelTestWatcher\Tests\TestFiles;
+namespace Grandadevans\LaravelTestWatcher\Tests\TestFiles;
 
 use PHPUnit\Framework\TestCase;
 use Illuminate\Support\Collection;
-use WackyStudio\LaravelTestWatcher\TestFiles\TestFile;
-use WackyStudio\LaravelTestWatcher\TestFiles\TestFilesCollection;
+use Grandadevans\LaravelTestWatcher\TestFiles\TestFile;
+use Grandadevans\LaravelTestWatcher\TestFiles\TestFilesCollection;
 
 class TestFilesCollectionTest extends TestCase
 {

@@ -1,14 +1,14 @@
 # NOT the PHPUnit version
 
 I have dated this folked repo so that it now uses Codeception instead of phpunit. I plan on introducing a choice into the config etc, but I don't have time at the moment.
-With that in mind I have left WackyStudio original readme below for your reference.
+With that in mind I have left Grandadevans original readme below for your reference.
 
 ![Logo](logo.jpg)
 # Run specific tests methods when your test or source code changes
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/wackystudio/laravel-test-watcher.svg?style=flat-square)](https://packagist.org/packages/wackystudio/laravel-test-watcher)
-[![Build Status](https://travis-ci.org/WackyStudio/laravel-test-watcher.svg?branch=master&style=flat-square)](https://travis-ci.org/WackyStudio/laravel-test-watcher.svg?branch=master)
-[![Total Downloads](https://img.shields.io/packagist/dt/wackystudio/laravel-test-watcher.svg?style=flat-square)](https://packagist.org/packages/wackystudio/laravel-test-watcher)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/grandadevans/laravel-test-watcher.svg?style=flat-square)](https://packagist.org/packages/grandadevans/laravel-test-watcher)
+[![Build Status](https://travis-ci.org/Grandadevans/laravel-test-watcher.svg?branch=master&style=flat-square)](https://travis-ci.org/Grandadevans/laravel-test-watcher.svg?branch=master)
+[![Total Downloads](https://img.shields.io/packagist/dt/grandadevans/laravel-test-watcher.svg?style=flat-square)](https://packagist.org/packages/grandadevans/laravel-test-watcher)
 
 When looking at our testing workflow, we realized how often we were triggering our tests, especially single test cases or groups of test cases.
 Using an IDE like PHPStorm this is done quickly with a keyboard shortcut, but in other IDEs, or editors, this is not always as easy. 
@@ -33,7 +33,7 @@ and Laravel Test Watcher takes care of the rest.
 You can install the package via composer:
 
 ```bash
-composer require wackystudio/laravel-test-watcher
+composer require grandadevans/laravel-test-watcher
 ```
 
 ## Usage
@@ -112,7 +112,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ### Security
 
-If you discover any security related issues, please email tgn@wackystudio.com instead of using the issue tracker.
+If you discover any security related issues, please email tgn@grandadevans.com instead of using the issue tracker.
 
 ## Credits
 

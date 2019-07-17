@@ -1,6 +1,6 @@
 <?php
 
-namespace WackyStudio\LaravelTestWatcher\Facades;
+namespace Grandadevans\LaravelTestWatcher\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

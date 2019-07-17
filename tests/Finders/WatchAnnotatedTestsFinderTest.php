@@ -1,12 +1,12 @@
 <?php
 
-namespace WackyStudio\LaravelTestWatcher\Tests\Finders;
+namespace Grandadevans\LaravelTestWatcher\Tests\Finders;
 
 use PHPUnit\Framework\TestCase;
 use Illuminate\Support\Collection;
-use WackyStudio\LaravelTestWatcher\TestFiles\InvalidTestFile;
-use WackyStudio\LaravelTestWatcher\Contracts\TestFileContract;
-use WackyStudio\LaravelTestWatcher\Finders\TestsAnnotatedWithWatchFinder;
+use Grandadevans\LaravelTestWatcher\TestFiles\InvalidTestFile;
+use Grandadevans\LaravelTestWatcher\Contracts\TestFileContract;
+use Grandadevans\LaravelTestWatcher\Finders\TestsAnnotatedWithWatchFinder;
 
 class WatchAnnotatedTestsFinderTest extends TestCase
 {
@@ -36,7 +36,7 @@ class WatchAnnotatedTestsFinderTest extends TestCase
         $collection = $finder->convertContentsToTokenCollection(file_get_contents(__DIR__.'/../helpers/tests/TestOne.php'));
         $filteredAndMappedCollection = $finder->filterWhiteSpaceAndMapTokensToNames($collection);
         $namespace = $finder->findNameSpace($filteredAndMappedCollection);
-        $this->assertEquals('WackyStudio\LaravelTestWatcher\Tests\helpers\tests', $namespace);
+        $this->assertEquals('Grandadevans\LaravelTestWatcher\Tests\helpers\tests', $namespace);
     }
 
     /** @test */

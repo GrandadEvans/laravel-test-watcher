@@ -1,6 +1,6 @@
 <?php
 
-namespace WackyStudio\LaravelTestWatcher\Factories;
+namespace Grandadevans\LaravelTestWatcher\Factories;
 
 use Illuminate\Support\Collection;
 use React\EventLoop\LoopInterface;
@@ -9,8 +9,8 @@ use Illuminate\Support\Facades\Config;
 use Yosymfony\ResourceWatcher\ResourceWatcher;
 use Yosymfony\ResourceWatcher\Crc32ContentHash;
 use Yosymfony\ResourceWatcher\ResourceCacheMemory;
-use WackyStudio\LaravelTestWatcher\LaravelTestWatcher;
-use WackyStudio\LaravelTestWatcher\Contracts\AnnotatedTestsFinderContract;
+use Grandadevans\LaravelTestWatcher\LaravelTestWatcher;
+use Grandadevans\LaravelTestWatcher\Contracts\AnnotatedTestsFinderContract;
 
 class LaravelTestWatcherFactory
 {

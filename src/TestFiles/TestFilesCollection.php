@@ -1,9 +1,9 @@
 <?php
 
-namespace WackyStudio\LaravelTestWatcher\TestFiles;
+namespace Grandadevans\LaravelTestWatcher\TestFiles;
 
 use Illuminate\Support\Collection;
-use WackyStudio\LaravelTestWatcher\Contracts\TestFileContract;
+use Grandadevans\LaravelTestWatcher\Contracts\TestFileContract;
 
 class TestFilesCollection
 {

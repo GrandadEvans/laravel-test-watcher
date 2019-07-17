@@ -1,10 +1,10 @@
 <?php
 
-namespace WackyStudio\LaravelTestWatcher\TestFiles;
+namespace Grandadevans\LaravelTestWatcher\TestFiles;
 
 use Illuminate\Support\Collection;
-use WackyStudio\LaravelTestWatcher\Contracts\TestFileContract;
-use WackyStudio\LaravelTestWatcher\Contracts\AnnotatedTestsFinderContract;
+use Grandadevans\LaravelTestWatcher\Contracts\TestFileContract;
+use Grandadevans\LaravelTestWatcher\Contracts\AnnotatedTestsFinderContract;
 
 class FilesToTestRepository
 {

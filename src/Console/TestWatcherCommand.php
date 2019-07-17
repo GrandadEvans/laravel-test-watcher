@@ -1,10 +1,10 @@
 <?php
 
-namespace WackyStudio\LaravelTestWatcher\Console;
+namespace Grandadevans\LaravelTestWatcher\Console;
 
 use Dotenv\Dotenv;
 use Illuminate\Console\Command;
-use WackyStudio\LaravelTestWatcher\Facades\LaravelTestWatcher;
+use Grandadevans\LaravelTestWatcher\Facades\LaravelTestWatcher;
 
 class TestWatcherCommand extends Command
 {
